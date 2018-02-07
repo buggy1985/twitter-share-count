@@ -1,0 +1,26 @@
+{
+  "name": "twitter-share-count",
+  "version": "0.1.0",
+  "description": "Get number of shares on Twitter for a URL",
+  "main": "twitter-share-count.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buggy1985/twitter-share-count.git"
+  },
+  "author": "Peter Bagi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buggy1985/twitter-share-count/issues"
+  },
+  "homepage": "https://github.com/buggy1985/twitter-share-count#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0"
+  }
+}
