@@ -1,9 +1,5 @@
 var Twitter = require('twitter');
 
-var truncateTweetObj = function(t) {
-    return "["+ t.id+ " | "+t.id_str+"]  "+t.user.screen_name+":  "+t.text;
-}
-
 var extractMaxId = function(url) {
     return url.split("max_id=")[1].split("&")[0];
 }
@@ -19,7 +15,7 @@ var twitterSearch = function(config, query, max_id) {
             if (error || body.errors) {
                 reject(error ? error : body.errors);
             } else {
-                var tweetsList = tweets.statuses.map(truncateTweetObj);
+                var tweetsList = tweets.statuses;
                 if ( tweets.statuses.length < params.count ) {
                     resolve({ tweets: tweetsList });
                 } else {
