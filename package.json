@@ -1,6 +1,6 @@
 {
   "name": "twitter-share-count",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get number of shares on Twitter for a URL",
   "main": "twitter-share-count.js",
   "scripts": {
